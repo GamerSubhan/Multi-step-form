@@ -1,0 +1,588 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 10%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body
+{
+    background-color: hsl(229, 24%, 87%);
+}
+
+.payment
+{
+    color: hsl(213, 96%, 18);
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 850px;
+    height: 590px;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 6px;
+}
+
+#formContainer
+{
+    display: block;
+    margin-right: 25%;
+}
+
+#planContainer
+{
+    display: none;
+    margin-right: 32%;
+}
+
+.container
+{
+    margin-top: -37%;
+    position: relative;
+    float: right;
+}
+
+.container h1
+{
+    color: hsl(213, 96%, 18%);
+    font-family: boldUbuntu;
+}
+
+.container p
+{
+    color: hsl(231, 11%, 63%);
+    font-family: regularUbuntu;
+}
+
+#sideBar
+{
+    margin-left: 2%;
+    margin-top: 1.6%;
+}
+
+#steps
+{
+    position: absolute;
+    margin-top: -65%;
+    margin-left: 2%;
+    list-style: none;
+}
+
+#steps li
+{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 360px;
+    text-align: center;
+    line-height: 210%;
+    color: white;
+    margin-top: 80%;
+}
+
+@font-face {
+    font-family: regularUbuntu;
+    src: url('assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: mediumUbuntu;
+    src: url('assets/fonts/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: boldUbuntu;
+    src: url("assets/fonts/Ubuntu-Bold.ttf");
+}
+
+li p
+{
+    margin-top: -6vh;
+    margin-left: 3vw;
+    color: hsl(229, 24%, 87%);
+    white-space: nowrap;
+    font-family: regularUbuntu;
+    font-size: 0.9em;
+}
+
+li h4 span
+{
+    color: hsl(213, 96%, 18);
+}
+
+li p span
+{
+    position: absolute;
+    white-space: nowrap;
+    color: white;
+    margin-top: 3vh;
+    margin-left: -3vw;
+    font-family: boldUbuntu;
+}
+
+.infoLabel
+{
+    font-family: mediumUbuntu;
+    color: hsl(213, 96%, 18%);
+    position: absolute;
+    margin-top: -7%;
+}
+
+.infoInput
+{
+    height: 40px;
+    width: 400px;
+    color: hsl(213, 96%, 18%);
+    border-radius: 6px;
+    border: solid 1px hsl(231, 11%, 63%);
+    text-indent: 10px;
+}
+
+.infoInput::placeholder
+{
+    color: hsl(231, 11%, 63%);
+}
+
+.infoInput:focus
+{
+    border-color: hsl(243, 100%, 62%);
+    outline: none;
+}
+
+.infoInput:hover
+{
+    cursor: pointer;
+}
+
+#formList
+{
+    list-style: none;
+    margin-left: -8%;
+    padding-top: 0.5%;
+}
+
+#formList li
+{
+    margin-top: 12%;
+}
+
+#nextButton
+{
+    position: absolute;
+    color: hsl(217, 100%, 97%);
+    width: 110px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    margin-top: -5%;
+    margin-left: 65%;
+    font-family: regularUbuntu;
+}
+
+#backButton
+{
+    position: absolute;
+    color: hsl(231, 11%, 63%);
+    margin-left: 45%;
+    margin-top: -4%;
+    font-family: mediumUbuntu;
+    display: none;
+}
+
+#backButton:hover
+{
+    cursor: pointer;
+    color: hsl(213, 96%, 18%, 0.85);
+}
+
+#nextButton:hover
+{
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.errorText
+{
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 60%;
+}
+
+.planBtn
+{
+    position: absolute;
+    border-radius: 6px;
+    width: 130px;
+    height: 160px;
+    margin-left: 1%;
+    margin-top: 5%;
+    border: solid 1px hsl(231, 11%, 63%);
+    background-color: transparent;
+}
+
+.planBtn img
+{
+    position: absolute;
+    margin-top: -50%;
+    margin-left: -35%;
+}
+
+.planBtn p
+{
+    position: absolute;
+    margin-top: 25%;
+    color: hsla(213, 96%, 18%, 0.85);
+    justify-content: start;
+    font-family: boldUbuntu;
+    margin-left: 5%;
+}
+
+p span
+{
+    color: hsl(231, 11%, 63%);
+}
+
+#advancedBtn
+{
+    margin-left: 45%;
+}
+
+#advancedBtn span
+{
+    margin-right: 20%;
+}
+
+#proBtn
+{
+    margin-left: 88%;
+}
+
+#proBtn p
+{
+    margin-left: -5%;
+}
+
+#proBtn span
+{
+    margin-left: 25%;
+}
+
+#timeContainer
+{
+    position: absolute;
+    height: 7vh;
+    width: 28.5vw;
+    border-radius: 6px;
+    background-color: hsl(217, 100%, 97%);
+    margin-top: 60%;
+}
+
+.slider-container {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 25px;
+    margin: 50px auto;
+    overflow: hidden;
+    top: -65%;
+  }
+
+  .slider-track {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 25px;
+    z-index: 1;
+  }
+
+  .slider-thumb {
+    position: absolute;
+    top: 11%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+#timeContainer p
+{
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 23%;
+}
+
+#monthlyText 
+{
+    color: hsl(213, 96%, 18%);
+    font-family: mediumUbuntu;
+}
+
+#yearlyText
+{
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 78%;
+    font-family: mediumUbuntu;
+}
+
+.toggle
+{
+    background-color: hsl(217, 100%, 97%);
+    border-color: hsl(243, 100%, 62%);  
+}
+
+#arcadeBtn .extraText
+{
+    margin-left: 5%;
+}
+
+#proBtn .extraText {
+    margin-left: 5%;
+}
+
+.extraText
+{
+    display: none;
+    color: hsl(213, 96%, 18%);
+    padding-top: 15%;
+    position: absolute;
+}
+
+#addsContainer
+{
+    display: none;
+    margin-right: 25.5%;
+}
+
+#addsContainer ul
+{
+    list-style: none;
+    margin-left: -9%;
+    margin-top: 5%;
+}
+
+.addsButton
+{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    height: 70px;
+    width: 400px;
+    border-radius: 6px;
+    margin-top: 3%;
+    border: 1px solid hsl(229, 24%, 87%);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.activate
+{
+    border-color: hsl(213, 96%, 18%);
+    background-color: hsl(217, 100%, 97%);
+}
+
+.addsButton div
+{
+    background-color: transparent;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 1px solid hsl(229, 24%, 87%);
+}
+
+.addsButton div img
+{
+    display: none;
+    padding-top: 30%;
+    margin-left: 15%;
+}
+
+#serviceTitle
+{
+    color: hsl(213, 96%, 18%);
+    font-family: mediumUbuntu;
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 4%;
+    display: flex;
+    justify-content: start;
+}
+
+#serviceTitle span
+{
+    color: hsl(231, 11%, 63%);
+    margin-top: 5%;
+    margin-left: 0%;
+    font-size: 0.9em;
+    font-family: regularUbuntu;
+}
+
+.priceText
+{
+    font-family: regularUbuntu;
+    color: hsl(213, 96%, 18);
+    margin-top: 5.5%;
+    margin-left: 30%;
+}
+
+#summaryContainer
+{
+    display: none;
+    margin-right: 27%;
+}
+
+#serviceList
+{
+    list-style: none;
+    margin-left: -5%;
+    position: absolute;
+    margin-top: 20%;
+}
+
+#summaryBg
+{
+    width: 420px;
+    height: 150px;
+    margin-top: 5vh;
+    background-color: hsl(231, 100%, 99%);
+    border-radius: 6px;
+    z-index: 10;
+}
+
+#arcadeText
+{
+    color: hsl(213, 96%, 18);
+    font-family: regularUbuntu;
+    margin-left: 5%;
+    position: absolute;
+}
+
+#changeText
+{
+    color: hsl(231, 11%, 63%);
+    text-decoration: underline;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#changeText:hover
+{
+    cursor: pointer;
+    color: hsl(243, 100%, 62%);
+}
+
+#totalPayment
+{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 7%;
+    color: hsl(213, 96%, 18);
+    font-family: boldUbuntu;
+}
+
+#servicePayment
+{
+    color: hsl(231, 11%, 63%);
+    font-family: regularUbuntu;
+}
+
+#storagePayment
+{
+    color: hsl(231, 11%, 63%);
+    font-family: regularUbuntu;
+}
+
+#profilePayment
+{
+    color: hsl(231, 11%, 63%);
+    font-family: regularUbuntu;
+}
+
+#total
+{
+    font-family: mediumUbuntu;
+    margin-left: 5%;
+}
+
+#totalAmount
+{
+    font-family: boldUbuntu;
+    color: hsl(243, 100%, 62%);
+    margin-left: 77%;
+    margin-top: -8%;
+    font-size: 1.3em;
+}
+
+#servicePrice
+{
+    position: absolute;
+    margin-left: 120%;
+    font-family: regularUbuntu;
+}
+
+#storagePrice
+{
+    position: absolute;
+    margin-left: 120%;
+    font-family: regularUbuntu;
+}
+
+#profilePrice 
+{
+    color: hsl(213, 96%, 18);
+    margin-left: 97%;
+    font-family: regularUbuntu;
+    position: absolute;
+}
+
+#onlineService
+{
+    display: none;
+}
+
+#largerStorage
+{
+    display: none;
+}
+
+#cuztomizableProfile
+{
+    display: none;
+}
+
+#finalPage
+{
+    display: none;
+    text-align: center;
+}
+
+#finalPage img
+{
+    position: absolute;
+    margin-left: -42vw;
+    margin-top: 10vh;
+}
+
+#finalPage h1
+{
+    position: absolute;
+    margin-left: -45vw;
+    margin-top: 24vh;
+}
+
+#finalPage p
+{
+    margin-left: -79vw;
+    margin-top: 31vh;
+}

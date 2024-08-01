@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+  <div id="container">
+    <img id="sideBar" width="270" height="560" src="assets/images/bg-sidebar-desktop.svg">
+    <ul id="steps">
+      <li style="background-color: hsl(228, 100%, 84%); color: hsl(213, 96%, 18%); border: none;">1 <p>STEP 1 <span>YOUR INFO</span></p></li>
+      <li>2 <p>STEP 2 <span>SELECT PLAN</span></p></li>
+      <li>3 <p>STEP 3 <span>ADD-ONS</span></p></li>
+      <li>4 <p>STEP 4 <span>SUMMARY</span></p></li>
+    </ul>
+  </div>
+
+  <div id="formContainer" class="container">
+    <h1>Personal info</h1>
+    <p>Please provide your name, email address, and phone number.</p>
+
+    <ul id="formList">
+      <li>
+        <label class="infoLabel">Name</label>
+        <input class="infoInput" type="text" placeholder="e.g. Stephen King">
+      </li>
+      <li>
+        <label class="infoLabel">Email Address</label>
+        <input class="infoInput" type="email" placeholder=" e.g. stephenking@lorem.com">
+      </li>
+      <li>
+        <label class="infoLabel">Phone Number</label>
+        <input class="infoInput" type="number" placeholder="e.g. +1 234 567 890">
+      </li>
+    </ul>
+  </div>
+
+  <div id="planContainer" class="container">
+    <h1>Select your plan</h1>
+    <p>You have the option of monthly or yearly billing.</p>
+    <button id="arcadeBtn" class="planBtn"><img width="40" height="40" src="assets/images/icon-arcade.svg"> <p>Arcade <br> <span>$9/mo</span></p> <p class="extraText">2 months free</p> </button>
+    <button id="advancedBtn" class="planBtn"><img width="40" height="40" src="assets/images/icon-advanced.svg"> <p>Advanced <br> <span>$12/mo</span></p> <p class="extraText">2 months free</p> </button>
+    <button id="proBtn" class="planBtn"><img width="40" height="40" src="assets/images/icon-pro.svg"> <p>Pro <br> <span>$15/mo</span></p> <p class="extraText">2 months free</p> </button>
+
+    <div id="timeContainer">
+      <p id="monthlyText">Monthly</p>
+      <div class="slider-container" id="slider">
+        <div class="slider-track"></div>
+        <div class="slider-thumb" id="thumb"></div>
+      </div>    
+    </div>
+    <p id="yearlyText">Yearly</p>
+  </div>
+
+  <div id="addsContainer" class="container">
+    <h1>Pick add-ons</h1>
+    <p>Add-ons help enhance your gaming experience.</p>
+    <ul>
+      <li>
+        <button id="serviceBtn" class="addsButton"> <div><img width="12" height="9" src="assets/images/icon-checkmark.svg"></div> <p id="serviceTitle">Online Service <br> <span>Access to multiplayer games</span></p> <p class="priceText" style="margin-left: 41%;">+$1/mo</p> </button>
+      </li>
+      <li>
+        <button id="storageBtn" class="addsButton"> <div><img width="12" height="9" src="assets/images/icon-checkmark.svg"></div> <p id="serviceTitle">Larger Storage <br> <span>Extra 1TB of cloud save</span></p> <p class="priceText" style="margin-left: 41%;">+$2/mo</p> </button>
+      </li>
+      <li>
+        <button id="profileBtn" class="addsButton"> <div><img width="12" height="9" src="assets/images/icon-checkmark.svg"></div> <p id="serviceTitle">Customizable Profile <br> <span>Custom theme on your profile</span></p> <p class="priceText">+$2/mo</p> </button>
+      </li>
+    </ul>
+  </div>
+
+  <div id="summaryContainer" class="container">
+    <h1>Finishing up</h1>
+    <p>Double-check everything looks OK before confirming.</p>
+
+    <div id="summaryBg">
+      <h4 id="arcadeText">Arcade (Monthly)</h4>
+      <p id="changeText">Change</p>
+      <h4 id="totalPayment">$9/mo</h4>
+
+      <ul id="serviceList">
+        <li id="onlineService">
+          <h4 id="servicePayment" class="payment">Online Service <span id="servicePrice" class="payment">+$1/mo</span></h4>
+        </li>
+        <li id="largerStorage">
+          <h4 id="storagePayment" class="payment">Larger Storage <span id="storagePrice" class="payment">+$2/mo</span></h4>
+        </li>
+        <li id="cuztomizableProfile">
+          <h4 id="profilePayment" class="payment">Customizable Profile <span id="profilePrice" class="payment">+2$/mo</span></h4>
+        </li>
+      </ul>
+
+    </div>
+
+    <p id="total">Total (per month)</p>
+    <h4 id="totalAmount">+$12/mo</h4>
+  </div>
+
+  <div id="finalPage" class="container">
+    <img width="80" height="80" src="assets/images/icon-thank-you.svg">
+    <h1>Thank you!</h1>
+    <p>Thanks for confirming your subscription! We hope you have <br> fun 
+      using our platform. If you ever need support, please feel <br> free 
+      to email us at support@loremgaming.com.
+    </p>
+  </div>
+
+  <hr style="display: none; background-color: hsl(229, 24%, 87%); width: 26vw; position: absolute; margin-top: -43vh; margin-left: 44.5vw;">
+  
+  <button id="nextButton">Next Step</button>
+  <p id="backButton">Go Back</p>
+
+  
+
+  
+  <!-- Step 5 end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
